@@ -15,9 +15,12 @@
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#2e8ac7" shadow></a-plane>
       <a-light type="ambient" color="#red"></a-light>
       <a-light type="point" color="#blue" position="-2 2 2"></a-light>
+      <a-entity position="0 0 0">
+        <a-camera></a-camera>
+      </a-entity>
       <a-entity id="alicesound" sound="src: #alice; autoplay: true; loop: true"></a-entity>
       <a-entity id="alicebook" gltf-model="#book" position="0 0 -4" scale="0.25 0.25 0.25" rotation="0 90 0"
-        animation__1="property: rotation; to: 360 90 0; loop: true; dur: 6000; easing: linear"
+        animation__1="property: rotation; to: 0 360 0; loop: true; dur: 6000; easing: linear"
         animation__2="property: position; to: 0 2 -4; from: 0 0 -4; loop: true; direction: alternate; dur: 6000; easing=linear"
         >
       </a-entity>
